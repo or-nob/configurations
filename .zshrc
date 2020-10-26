@@ -70,8 +70,9 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git dotenv osx zsh-autosuggestions)
+
 # If we want to use vi like bindings in zsh shell
-# vi-mode
+# bindkey -v
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,15 +101,16 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# syntax for highlighting and autojump
 source /usr/local/Cellar/zsh-syntax-highlighting/0.6.0/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-# Base16 Shell
+# Base16 Shell (might not work)
 BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
-# Set key bindings for bash shell to vim.
-#bindkey -v
+# Settings for tmux 256-colors
 alias tmux="tmux -2"
 export TERM="xterm-256color"
 
