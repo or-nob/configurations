@@ -76,7 +76,7 @@ bindkey -v
 
 source $ZSH/oh-my-zsh.sh
 
-VI_MODE_SET_CURSOR=true
+# VI_MODE_SET_CURSOR=true
 VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 MODE_INDICATOR="%F{yellow}+%f"
 
