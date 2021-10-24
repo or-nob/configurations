@@ -127,3 +127,5 @@ export PATH="$HOME/.config/coc/extensions/coc-clangd-data/install/11.0.0/clangd_
 export PATH="/usr/local/sbin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export MANPAGER="vim -M +MANPAGER -"
